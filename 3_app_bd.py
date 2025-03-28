@@ -5,7 +5,14 @@ from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import declarative_base, sessionmaker
 from dotenv import load_dotenv
 import os
+#Formçando no deploy do streamlit ele instlar esa versao do SQLAlchemy
 os.system("pip install SQLAlchemy==2.0.40")
+
+senha = st.text_input("Digite a senha:", type="password")
+if senha != "minhasenha123":
+    st.stop()
+
+st.write("Bem-vindo ao app protegido! 🎉")
 
 # Carregar variáveis de ambiente
 load_dotenv()
