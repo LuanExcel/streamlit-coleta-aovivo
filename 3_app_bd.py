@@ -4,6 +4,8 @@ from sqlalchemy import create_engine, Column, Integer, String, Text
 from sqlalchemy.exc import SQLAlchemyError
 from sqlalchemy.orm import declarative_base, sessionmaker
 from dotenv import load_dotenv
+import os
+os.system("pip install SQLAlchemy==2.0.40")
 
 # Carregar variáveis de ambiente
 load_dotenv()
