@@ -13,3 +13,6 @@ ruff check .
 
 # Inserir essa lib para conexao postgres
 pip install psycopg2-binary
+
+# Deploy
+Tem q lembrar de passar as variáveis de ambiente no deploy
