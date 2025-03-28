@@ -16,3 +16,9 @@ pip install psycopg2-binary
 
 # Deploy
 Tem q lembrar de passar as variáveis de ambiente no deploy
+
+# version
+pyenv exec python -m venv venv
+
+# requirements
+pip install -r requirements.txt
